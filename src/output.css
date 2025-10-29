@@ -380,10 +380,38 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .hover\:-mb-\[3px\] {
+    &:hover {
+      @media (hover: hover) {
+        margin-bottom: calc(3px * -1);
+      }
+    }
+  }
   .hover\:mb-\[-2px\] {
     &:hover {
       @media (hover: hover) {
         margin-bottom: -2px;
+      }
+    }
+  }
+  .hover\:mb-\[-3px\] {
+    &:hover {
+      @media (hover: hover) {
+        margin-bottom: -3px;
+      }
+    }
+  }
+  .hover\:mb-\[-\] {
+    &:hover {
+      @media (hover: hover) {
+        margin-bottom: -;
+      }
+    }
+  }
+  .hover\:mb-\[3px\] {
+    &:hover {
+      @media (hover: hover) {
+        margin-bottom: 3px;
       }
     }
   }
@@ -392,6 +420,21 @@
       @media (hover: hover) {
         border-bottom-style: var(--tw-border-style);
         border-bottom-width: 2px;
+      }
+    }
+  }
+  .hover\:border-b-\[3px\] {
+    &:hover {
+      @media (hover: hover) {
+        border-bottom-style: var(--tw-border-style);
+        border-bottom-width: 3px;
+      }
+    }
+  }
+  .hover\:border-\[\#69B99D\] {
+    &:hover {
+      @media (hover: hover) {
+        border-color: #69B99D;
       }
     }
   }
