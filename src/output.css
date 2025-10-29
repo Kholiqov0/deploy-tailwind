@@ -163,6 +163,9 @@
   .m-auto {
     margin: auto;
   }
+  .my-\[50px\] {
+    margin-block: 50px;
+  }
   .mt-\[30px\] {
     margin-top: 30px;
   }
@@ -184,6 +187,9 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .h-\[20px\] {
     height: 20px;
   }
@@ -201,6 +207,15 @@
   }
   .w-\[70\%\] {
     width: 70%;
+  }
+  .w-\[800px\] {
+    width: 800px;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-\[400px_400px_400px\] {
     grid-template-columns: 400px 400px 400px;
@@ -234,6 +249,10 @@
   }
   .rounded-\[20px\] {
     border-radius: 20px;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-\[2px\] {
     border-style: var(--tw-border-style);
@@ -338,9 +357,6 @@
   .text-\[\#000000\] {
     color: #000000;
   }
-  .text-\[\#69B99D\] {
-    color: #69B99D;
-  }
   .text-\[\#252B42\] {
     color: #252B42;
   }
@@ -353,9 +369,16 @@
   .text-\[white\] {
     color: white;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .shadow-\[0px_0px_5px_lightgray\] {
     --tw-shadow: 0px 0px 5px var(--tw-shadow-color, lightgray);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .hover\:mb-\[-2px\] {
     &:hover {
@@ -535,6 +558,11 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -554,6 +582,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
     }
   }
 }
